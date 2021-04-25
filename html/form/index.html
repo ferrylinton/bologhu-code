@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>FORM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Empty HTML">
+  <meta name="author" content="Ferry L.H.">
+  <meta name="keywords" content="HTML" />
+  <meta name="description" content="Empty HTML example" />
+</head>
+
+<body>
+  <h3>FORM</h3>
+  <hr>
+  <br>
+  <form action="/form" method="get" autocomplete="off">
+
+    <label for="username">Username</label><br>
+    <input type="text" id="username" name="username" placeholder="Username" maxlength="50" required>
+
+    <br><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Email" maxlength="50" required>
+
+    <br><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password" placeholder="Password" maxlength="50" autocomplete="false"
+      required>
+
+    <br><br>
+    <label for="dob">Date Of Birth</label><br>
+    <input type="date" id="dob" name="dob" placeholder="Date Of Birth" required>
+
+    <br><br>
+    <label for="gender">Gender</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <br><br>
+    <label for="role">Role</label><br>
+    <select id="role">
+      <option value="Admin">Admin</option>
+      <option value="Manager">Manager</option>
+      <option value="Guest">Guest</option>
+    </select>
+
+    <br><br>
+    <label for="language">Language</label><br>
+    <input type="checkbox" id="language-english" name="language" value="English">
+    <label for="vehicle1"> English</label><br>
+    <input type="checkbox" id="language-chinese" name="language" value="Chinese">
+    <label for="vehicle2"> Chinese</label><br>
+
+    <br><br>
+    <input type="reset" value="Reset">&nbsp;
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+
+</html>
