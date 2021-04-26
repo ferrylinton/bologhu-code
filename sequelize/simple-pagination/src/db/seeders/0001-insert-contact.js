@@ -8,7 +8,7 @@ module.exports = {
 
         let contacts = [];
         
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 1; i <= 101; i++) {
             contacts.push({
                 name: faker.name.findName(),
                 created_at: faker.date.recent()
