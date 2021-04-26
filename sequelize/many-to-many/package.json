@@ -1,0 +1,27 @@
+{
+  "name": "sequelize-onetomany",
+  "version": "1.0.0",
+  "description": "OneToMany Sample With Sequelize",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "NODE_ENV=development sequelize db:migrate && sequelize db:seed:all",
+    "start": "NODE_ENV=development node index.js",
+    "test": "NODE_ENV=test mocha test/**/*.spec.js"
+  },
+  "keywords": [
+    "sequelize",
+    "sqlite3"
+  ],
+  "author": "Ferry L. H.",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2",
+    "uid": "^2.0.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0",
+    "umzug": "^2.3.0"
+  }
+}

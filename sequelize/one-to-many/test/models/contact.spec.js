@@ -20,7 +20,7 @@ describe('Contact', function () {
 
     describe('#create()', async function () {
 
-        it(`should return contact with name '${data.name}'`, async function () {
+        it(`should return contact with name equals '${data.name}'`, async function () {
             let contact = await Contact.create(data)
 
             assert.strictEqual(contact.name, data.name);
