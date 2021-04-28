@@ -2,3 +2,5 @@ node_modules
 temp
 *.sqlite
 .nyc_output
+.scannerwork
+coverage
