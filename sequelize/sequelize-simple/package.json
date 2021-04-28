@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Starting With Sequelize",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/ferrylinton/bologhu-code.git"
+  },
   "scripts": {
     "prestart": "NODE_ENV=development sequelize db:migrate && sequelize db:seed:all",
     "start": "NODE_ENV=development node index.js",
@@ -10,16 +14,18 @@
   },
   "keywords": [
     "sequelize",
-    "sqlite3"
+    "sqlite3",
+    "mocha"
   ],
   "author": "Ferry L. H.",
   "license": "ISC",
   "dependencies": {
-    "faker": "^5.5.3",
     "sequelize": "^6.6.2",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
+    "chai": "^4.3.4",
+    "faker": "^5.5.3",
     "sequelize-cli": "^6.2.0",
     "umzug": "^2.3.0"
   }

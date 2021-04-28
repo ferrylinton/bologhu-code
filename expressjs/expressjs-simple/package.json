@@ -1,0 +1,27 @@
+{
+  "name": "expressjs-simple",
+  "version": "1.0.0",
+  "description": "Starting With ExpressJS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/ferrylinton/bologhu-code.git"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development node index.js",
+    "test": "NODE_ENV=test mocha test/**/*.spec.js",
+    "coverage": "nyc npm run test"
+  },
+  "keywords": [
+    "expressjs"
+  ],
+  "author": "Ferry L. H.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nyc": "^15.1.0",
+    "supertest": "^6.1.3"
+  }
+}
